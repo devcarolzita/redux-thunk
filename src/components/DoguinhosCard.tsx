@@ -1,4 +1,3 @@
-import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {  Dispatch, INITIAL_STATE_TYPE } from '../types';
 import { fetchDogImagem } from '../redux/actions';

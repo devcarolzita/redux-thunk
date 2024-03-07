@@ -4,14 +4,14 @@ export const requestStart = () => {
   return {type: "REQUEST_START"}
 }
 
-export const requestOk = (data) => {
+export const requestOk = (data:string) => {
   return {
     type: "REQUEST_OK",
     payload: data
   }
 }
 
-export const requestFalha = (erro) => {
+export const requestFalha = (erro: string) => {
   return {
     type: "REQUEST_FALHOU",
     erro: erro
@@ -26,7 +26,7 @@ export const fetchDogImagem = () => {
       const data = await request.json();
       dispatch(requestOk(data.message));
     }catch(erro){
-      dispatch(requestFalha(erro))
+      dispatch(requestFalha('algo deu errado'))
     }
   }
 }

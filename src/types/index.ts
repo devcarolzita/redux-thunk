@@ -11,4 +11,7 @@ export type GlobalStateType = {
   isDog: INITIAL_STATE_TYPE
 }
 
+export type dataType = {
+  
+}
 export type Dispatch = ThunkDispatch<GlobalStateType, unknown, AnyAction>;
